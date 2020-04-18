@@ -4,8 +4,9 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-  <title>Kerala COVID-19 Coronavirus Tracker</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i,800&display=swap" rel="stylesheet">
+  <title>Kerala COVID-19 Tracker</title>
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700,700i,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap" rel="stylesheet"> 
 
   <link
     rel="icon"
@@ -116,6 +117,16 @@
     </div>
   </section>
 
+    <section id="patients—age-breakup-container" class="embed-hide">
+    <h4 data-ja="രോഗികൾ—പ്രായാടിസ്ഥാനത്തിൽ">Patients—Age breakup</h4>
+    <div id="age-trend-chart"> </div>
+  </section>
+
+  <section id="patients—gender-breakup-container" class="embed-hide">
+    <h4 data-ja="രോഗികൾ—ലിംഗാടിസ്ഥാനത്തിൽ">Patients—Gender breakup</h4>
+    <div id="gender-chart" align="center"> </div>
+</section>
+
   <section id="prefecture-trajectory-container" class="embed-hide">
     <h4 data-ja="ജില്ല തിരിച്ചുള്ള രോഗവ്യാപന ട്രാജക്ടറി (10 രോഗികളിലധികം )">Confirmed Case Trajectories by Districts (> 10 Cases)</h4>
     <div id="prefecture-trajectory">
@@ -134,6 +145,7 @@
           <th data-ja="കേസ്" class="count">Confirmed</th>
           <th data-ja="സുഖപ്പെട്ടവർ" class="count">Recovered</th>
           <th data-ja="ജീവഹാനി"class="count">Deaths</th>
+          <th data-ja="സജീവം"class="count">Active</th>
         </tr>
       </thead>
       <tbody>
@@ -141,24 +153,6 @@
       </tbody>
       <tfoot></tfoot>
     </table>
-  </section>
-
-  <section id="patients—age-breakup-container" class="embed-hide">
-    <h4 data-ja="രോഗികൾ—പ്രായാടിസ്ഥാനത്തിൽ">Patients—Age breakup</h4>
-    <div>
-    <img src="https://plotly.com/~srkc95/54.png" alt="Patients—Age breakup" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" />
-    <script data-plotly="srkc95:54" src="https://plotly.com/embed.js" async></script>
-</div>
-
-  </section>
-
-  <section id="patients—gender-breakup-container" class="embed-hide">
-    <h4 data-ja="രോഗികൾ—ലിംഗാടിസ്ഥാനത്തിൽ">Patients—Gender breakup</h4>
-    <div>
-    <img src="https://plotly.com/~srkc95/52.png" alt="Patients—Gender breakup" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" />
-    <script data-plotly="srkc95:52" src="https://plotly.com/embed.js" async></script>
-</div>
-
   </section>
 
   <section>
@@ -176,7 +170,6 @@
   </section>
 
   <section id="helpful-links" class="embed-hide">
-    <a name="links"></a>
     <h4 data-ja="പ്രാഥമിക ഡാറ്റ ഉറവിടങ്ങൾ">Primary Data Sources</h4>
     <ul>
       <li><a href="https://www.mohfw.gov.in/">Ministry of Health and Family Welfare, Govt of India</a></li>
