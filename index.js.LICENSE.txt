@@ -1,7 +1,7 @@
 /* @license C3.js v0.7.15 | (c) C3 Team and other contributors | http://c3js.org/ */
 
 /*!
- * ApexCharts v3.17.1
+ * ApexCharts v3.19.2
  * (c) 2018-2020 Juned Chhipa
  * Released under the MIT License.
  */
